@@ -1,0 +1,13 @@
+.images{
+    width: 73.5%;
+    height: 20%;
+    margin-left: 13.3%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .images{
+        width:75%;
+        height:50%;
+      }
+    }

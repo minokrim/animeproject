@@ -1,0 +1,228 @@
+.main{
+    width: 100%;
+    background-color: black;
+}
+.cont-1{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.cont-1 img{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+.detailsSec.p{
+    color: white;
+    width: 80%;
+    font-size: 17px;
+    margin-left: 50px;
+}
+.title{
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+}
+.et{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.jt{
+    margin-top: 0;
+    padding-top: 0;
+}
+.synopsis{
+    font-size: 17px;
+    width: 80%;
+}
+.descriptionContainer{
+    display: flex;
+    margin-left: 50px;
+    gap: 100px;
+    color: white;
+    font-size: 17px;
+}
+.desc1>p{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.desc2>p{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.section2{
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 500px;
+}
+.bookmark{
+    display: flex;
+    color: rgb(255, 255, 255,0.2);
+    font-size: 20px;
+    background-color: rgba(255, 253, 253, 0.2);
+    border-radius: 5px;
+    height: 39px;
+    width: 120px;
+    padding-left: 5px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+.bookmark>img{
+    display: flex;
+    justify-self: center;
+    height: 20px;
+    width: auto;
+    align-self: flex-end;
+    margin-bottom: 7px;
+}
+.trailer{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 253, 253, 0.2);
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.trailer>img{
+    display: flex;
+    justify-self: center;
+    height: 20px;
+    width: auto;
+    align-self: flex-end;
+    margin-bottom: 7px;
+}
+
+.trailerVideo{
+    position: relative;
+    width: max-content;
+    margin-top: -1195px;
+    background-color: white;
+    height: 550px;
+    display: flex;
+    margin-right: 20px;
+}
+.trailer:hover{
+    background-color: red;
+}
+.bookmark:hover{
+    color: white;
+}
+.hr{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid 1px red;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.characterSection{
+    position: relative;
+    margin-top: -30px;
+}
+
+.darken{
+    transition: 0.7s;
+    border: solid white 0.1px;
+    box-shadow: 5px 5px 17px 0px rgb(180, 148, 148);
+}
+.darken:hover{
+    filter: brightness(0.3);
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width:1000px) {
+    .cont-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont-1 img{
+        display: flex;
+        width: 500px;
+        height: 700px;
+        margin-left: 8px;
+        text-align: center;
+        align-self: center;
+    }
+    .descriptionContainer{
+        display: flex;
+        gap: 180px;
+    }
+    .desc1>p{
+        gap: 20px;
+    }
+    .title{
+        width: max-content;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .synopsis{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    }
+
+    @media screen and (max-width:600px) {
+        .main{
+            width: 100%;
+            background-color: black;
+        }
+        .cont-1{
+            display: flex;
+            flex-direction: column;
+        }
+        .cont-1 img{
+            display: flex;
+            width: max-content;
+            height: 400px;
+            margin-left: 8px;
+            text-align: center;
+            align-self: center;
+        }
+        .descriptionContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .desc1>p{
+            gap: 20px;
+        }
+        .title{
+            width: max-content;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .synopsis{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .section2{
+            padding-left: 0;
+        }
+        .trailerVideo{
+            width: 200px;
+            margin-right: 100px;
+            margin-top: 0;
+            height: max-content;
+        }
+        
+        }
