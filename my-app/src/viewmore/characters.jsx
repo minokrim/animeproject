@@ -1,5 +1,5 @@
 import React ,{useState,useEffect}from "react"
-import "C:/Users/PC/Documents/test/my-app/src/viewmore/character.css"
+import "../viewmore/character.css"
 import { Link } from "react-router-dom";
 
 function Characters({number}){
