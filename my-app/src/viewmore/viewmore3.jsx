@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../viewmore/viewmore.css";
 import Characters from "./characters";
 import { useParams } from "react-router-dom";
-import playbtn from "C:/Users/PC/Documents/test/my-app/src/img/play-button.png"
-import bkmrk from "C:/Users/PC/Documents/test/my-app/src/img/bkmark.png"
+import playbtn from "../img/play-button.png"
+import bkmrk from "../img/bkmark.png"
 
 function Viewmore3() {
   const { id } = useParams();

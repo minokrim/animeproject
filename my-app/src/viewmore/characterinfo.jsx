@@ -1,5 +1,5 @@
 import React ,{useState,useEffect}from "react";
-import "C:/Users/PC/Documents/test/my-app/src/viewmore/characterinfo.css"
+import "../viewmore/characterinfo.css"
 import { useParams } from "react-router-dom";
 
 function Charinfo (){
