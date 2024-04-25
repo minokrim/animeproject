@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Home from './HomePage/Home';
 import Middle from './Middle/Middle';
 import MyCarousel from './Carousel/Carousel';
+import Test from './TestNav/Test';
+import Footer from './Footer/Footer';
 function App() {
 
  const [topAnime, setTopAnime] = useState([]);
@@ -13,7 +15,7 @@ function App() {
   const temp = await fetch("https://api.jikan.moe/v4/seasons/now")
   .then(res => res.json());
 
-setTopAnime(temp.data.slice(0, 20));
+setTopAnime(temp.data);
 
   };
 
@@ -28,10 +30,11 @@ console.log(topAnime);
     <div className="app d-flex flex-column justify-content-center align-items-center">
 
 
-
-<MyCarousel/>
-<Middle/> 
-<Home topAnime={topAnime}/>     
+<Test />
+<MyCarousel />
+<Middle /> 
+<Home topAnime={topAnime}/>    
+<Footer /> 
     </div>
   );
 }

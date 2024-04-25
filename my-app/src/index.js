@@ -10,6 +10,7 @@ import Characters from './viewmore/characters';
 import FullPage from './Popular/Fullpopular';
 import Viewmore3 from './viewmore/viewmore3';
 import Charinfo from './viewmore/characterinfo';
+import Textt from './Sucess';
 
 const router = createBrowserRouter([
 {path : '/', element: <App /> },
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
 {path : '/characters', element: <Characters /> },
 {path : '/viewmore/:id', element: <Viewmore3 /> },
 {path : '/characterinfo/:id', element: <Charinfo /> },
+{path : '/test', element: <Textt /> },
  ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
