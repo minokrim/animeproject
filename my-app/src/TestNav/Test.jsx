@@ -7,6 +7,9 @@ import { FaSearch } from "react-icons/fa";
 import React, { useEffect }  from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import debounce from 'lodash.debounce';
+import { useCallback } from 'react';
+
 
 export default function Test (){
     const[toggle,setToggle]=useState(false)
@@ -18,23 +21,31 @@ export default function Test (){
   const [inputValue, setInputValue] = useState('');
   const [data, setData] = useState([]);
 
-  useEffect(()=>{
-    const searchAnime = async()=>{
-        const response = await fetch(`https://api.jikan.moe/v4/anime?q=${inputValue}`);
-        const data = await response.json();
-        setData(data?.data);
+
+  
+  const SearchAnime =
+    async (inputValue) => {
+      const response = await fetch(`https://api.jikan.moe/v4/anime?q=${inputValue}`);
+      const data = await response.json();
+      setData(data?.data);
     }
-    
-      searchAnime();
-    
-  },[inputValue]);
+  
+    const debouncedSearch = useCallback(debounce(SearchAnime, 500,{ leading: true, trailing: true }), []);
+  
+
+  useEffect(() => {
+    debouncedSearch(inputValue,setData);
+  },[inputValue,setData] );
+
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
+   
   };
 
-  const handleKeyPress = (event) => {
+  const handleKeyPress = async (event) => {
     if (event.key === 'Enter') {
       event.preventDefault();      
+      await debouncedSearch.flush();
       navigate('/test', { state:{inputValue,data}});
     }
   };

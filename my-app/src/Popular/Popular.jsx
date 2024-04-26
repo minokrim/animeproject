@@ -1,4 +1,5 @@
-import React, { useState,useEffect } from "react";
+import debounce from "lodash.debounce";
+import React, { useState,useEffect, useCallback } from "react";
 
 
 
@@ -6,13 +7,16 @@ function Popular( ) {
     const [popular, setPopular] = useState([]);
 
 
-  const GetPopular = async () => {
+  const GetPopular =useCallback(
+    debounce( async () => {
   const temp = await fetch("https://api.jikan.moe/v4/seasons/now")
   .then(res => res.json());
 
 setPopular(temp.data.slice(0, 20));
 
-  };
+  },500),
+  []
+);
 
   useEffect(() => {
  GetPopular();
