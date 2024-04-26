@@ -12,18 +12,7 @@ export default function Textt() {
   
 
   return (
-  /*   <div>
-      <Test />
-      <h1>Success Page</h1>
-      <h2>{inputValue}</h2>
-      {filteredData && filteredData.map((item) => (
-        <div key={item.mal_id}>
-          <h2>{item.title}</h2>
-          <img src={item.images.jpg.large_image_url} alt="" />
-        
-        </div>
-      ))}
-    </div> */
+
 
   <div className='bg-black'>
     <Test />
