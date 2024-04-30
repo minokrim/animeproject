@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import debounce from 'lodash.debounce';
 import { useCallback } from 'react';
+import {Link} from "react-router-dom"
 
 
 export default function Test (){
@@ -57,7 +58,9 @@ return(
     <div className='test1'>
     <h1 className='header-1'>MyAnime</h1> 
     <div className={toggle? 'test2 active':'test2'}>
-        <a className='link d-flex align-items-center justify-content-center' href='/'><FaHome  className='text-white '/></a>
+      <Link to="/bookmark">
+      <a className='link d-flex align-items-center justify-content-center' href='/'><FaHome  className='text-white '/></a>
+      </Link>
         <a className='link d-flex align-items-center justify-content-center' href='/'><BiMoviePlay className='text-white'/></a>
         <a className='link d-flex align-items-center justify-content-center' href='/'><PiTelevisionSimpleFill className='text-white '/></a>        
     </div>
