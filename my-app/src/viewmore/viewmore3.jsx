@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "../viewmore/viewmore.css";
 import Characters from "./characters";
-import { useParams } from "react-router-dom";
+import { useParams,useLocation } from "react-router-dom";
 import playbtn from "../img/play-button.png"
 import bkmrk from "../img/bkmark.png"
+import Bookmarksection from "../bookmark/bookmark";
+import Test from "../TestNav/Test";
 
 function Viewmore3() {
   const { id } = useParams();
   const [showTrailer, setShowTrailer] = useState(false);
   const [animation, setAnimation] = useState(null);
-
+  const [bookmarkclicked,setbookmarkclicked]=useState(false)
+  const location = useLocation()
+  
+  function clickedbmark(){
+    setbookmarkclicked(true)
+    console.log("bookmarkclicked")
+    console.log(bookmarkclicked)
+  }
+  
   useEffect(() => {
     const getAnimation = async () => {
       try {
@@ -30,9 +40,16 @@ function Viewmore3() {
     return null; 
   }
 
+  // if (location.pathname === "/bookmark") {
+  //   return (
+  //         <Bookmarksection animation={animation} bookmarkclicked={bookmarkclicked} number={id} />
+  //   );
+  // }
+
   return (
     <div className="main">
       <section className="container">
+      <Test/>
         <div className="cont-1">
           <img src={animation.images?.jpg?.large_image_url} alt="" className="darken"/>
           <div className="detailsSec">
@@ -59,7 +76,7 @@ function Viewmore3() {
         </div>
 
         <div className="section2">
-          <p className="bookmark"> <img src={bkmrk} alt="" />Bookmark</p>
+          <p className="bookmark" onClick={clickedbmark}> <img src={bkmrk} alt=""/>Bookmark</p>
           <p onClick={() => setShowTrailer(!showTrailer)} className="trailer"><img src={playbtn} alt="" />Trailer</p>
         </div>
 
@@ -78,10 +95,10 @@ function Viewmore3() {
       </section>
       <div className="characterSection">
       <Characters number={id}/>
+      <Bookmarksection animation={animation} bookmarkclicked={bookmarkclicked} number={id}/>
       </div>
       
     </div>
   );
 }
-
 export default Viewmore3;
