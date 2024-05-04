@@ -1,10 +1,99 @@
-p{
-    color: red;
-    border: solid 1px green;
-}
 .bookmarkMain{
     background-color: black;
+    height: 100vh;
 }
-section {
+.bookmarkSection {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+.bmark{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-left: 50px;
+}
+.bmarktitle{
+    margin-left: 50px;
+    font-family: cursive;
+    
+}
+.bmarkImage{
+    width: 190px;
+    height: auto;
+    border: solid white 0.1px;
+    box-shadow: 5px 5px 17px 0px rgb(180, 148, 148);
+}
+.bmarkTitle{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    width: 10%;
+}
+.trash{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    opacity: 50%;
+    margin-left: 700px;
+}
+.trash:hover{
+    opacity: 100%;
+}
+
+@media screen and (max-width:1000px) {
+.bookmarkSection{
+    display: flex;
+    width: 100%;
+}
+.bmark{
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+}
+.bmarktitle{
+    margin-left: 150px;
+    font-family: cursive;
+}
+.trash{
+    margin-left: 0;
+}
+}
+@media screen and (max-width:600px) {
+.bookmarkSection{
+    display: flex;
+    justify-content: center;  
+    width: 100%;
+}
+.bmark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0;
+    width: 100%;
+}
+.bmarkTitle{
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+.bmarktitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 70%;
+    align-self: center;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+.trash{
+    margin-left: 0;
+    opacity: 100%;
+}
 }

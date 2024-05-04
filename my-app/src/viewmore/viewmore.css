@@ -138,14 +138,10 @@
 }
 
 .darken{
-    transition: 0.7s;
     border: solid white 0.1px;
     box-shadow: 5px 5px 17px 0px rgb(180, 148, 148);
 }
-.darken:hover{
-    filter: brightness(0.3);
-    transform: scale(0.9);
-}
+
 
 
 @media screen and (max-width:1000px) {

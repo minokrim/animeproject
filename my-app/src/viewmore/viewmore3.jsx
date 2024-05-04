@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "../viewmore/viewmore.css";
 import Characters from "./characters";
-import { useParams,useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import playbtn from "../img/play-button.png"
 import bkmrk from "../img/bkmark.png"
-import Bookmarksection from "../bookmark/bookmark";
 import Test from "../TestNav/Test";
 
 function Viewmore3() {
   const { id } = useParams();
   const [showTrailer, setShowTrailer] = useState(false);
   const [animation, setAnimation] = useState(null);
-  const [bookmarkclicked,setbookmarkclicked]=useState(false)
-  const location = useLocation()
-  
+
   function clickedbmark(){
-    setbookmarkclicked(true)
-    console.log("bookmarkclicked")
-    console.log(bookmarkclicked)
+    var prevArray=JSON.parse(localStorage.getItem("array")) || [];
+    (prevArray.push(id))
+    localStorage.setItem("array", JSON.stringify(prevArray));
   }
   
   useEffect(() => {
@@ -39,12 +36,6 @@ function Viewmore3() {
   if (!animation) {
     return null; 
   }
-
-  // if (location.pathname === "/bookmark") {
-  //   return (
-  //         <Bookmarksection animation={animation} bookmarkclicked={bookmarkclicked} number={id} />
-  //   );
-  // }
 
   return (
     <div className="main">
@@ -70,6 +61,7 @@ function Viewmore3() {
                 <p>Duration: {animation.duration}</p>
                 <p>{animation.source}</p>
                 <p>{animation.category}</p>
+                <p>{animation.mal_id}</p>
               </div>
             </div>
           </div>
@@ -95,7 +87,6 @@ function Viewmore3() {
       </section>
       <div className="characterSection">
       <Characters number={id}/>
-      <Bookmarksection animation={animation} bookmarkclicked={bookmarkclicked} number={id}/>
       </div>
       
     </div>
