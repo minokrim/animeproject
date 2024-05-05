@@ -1,5 +1,7 @@
 .big-container{
     width: 100%;
+  
+    background-color: black;
 }
 .test1{
   
@@ -124,7 +126,11 @@ left: 0;
 
 
 @media only screen and (max-width: 600px) {
-
+.big-container{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 .test2{
     position: absolute;
     top: 0;
@@ -157,6 +163,45 @@ left: 0;
 }
 
       }
+      @media only screen and (max-width: 600px) {
+        .big-container{
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+        .test2{
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background-color: rgb(121, 30, 20,0.6);
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100vh;
+            justify-content: center;
+            margin-left: 0;
+            z-index: 1;
+            transition: 1s;
+        }
+        .burg{
+            display: flex;
+            margin-right: 8%;
+        }
+        .test2.active{
+            left: 0;
+        }
+        
+        
+        
+        .link{
+            margin-bottom: 5%;
+        }
+        .header-1{
+            margin-left:2%;
+          margin-right: 0;
+        }
+        
+              }
 
 
 

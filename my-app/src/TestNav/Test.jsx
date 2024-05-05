@@ -30,12 +30,16 @@ export default function Test (){
       setData(data?.data);
     }
   
-    const debouncedSearch = useCallback(debounce(SearchAnime, 500,{ leading: true, trailing: true }), []);
+    const debouncedSearch = useCallback(debounce(SearchAnime, 300,{ leading: true, trailing: true }), []);
   
 
-  useEffect(() => {
-    debouncedSearch(inputValue,setData);
-  },[inputValue,setData] );
+    useEffect(() => {
+      if (inputValue.trim() !== '') {
+        debouncedSearch(inputValue);
+      } else {
+        setData([]);
+      }
+    }, [inputValue, debouncedSearch]);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -57,7 +61,7 @@ return(
     <div className='test1'>
     <h1 className='header-1'>MyAnime</h1> 
     <div className={toggle? 'test2 active':'test2'}>
-        <a className='link d-flex align-items-center justify-content-center' href='/'><FaHome  className='text-white '/></a>
+        <a className='link d-flex align-items-center justify-content-center' href='/front'><FaHome  className='text-white '/></a>
         <a className='link d-flex align-items-center justify-content-center' href='/'><BiMoviePlay className='text-white'/></a>
         <a className='link d-flex align-items-center justify-content-center' href='/'><PiTelevisionSimpleFill className='text-white '/></a>        
     </div>
@@ -76,7 +80,7 @@ return(
         </div>
         </div>
         <form action="">
-         <div className={toggleSearch? 'input1':'input1 active'}>
+         <div className={toggleSearch? 'input1 active':'input1 '}>
             <input className='cost-input'
              type="text"
              placeholder='Search...' 
