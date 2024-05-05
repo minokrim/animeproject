@@ -12,6 +12,7 @@ import Viewmore3 from './viewmore/viewmore3';
 import Charinfo from './viewmore/characterinfo';
 import Textt from './Sucess';
 import FrontPage from './FrontPage/Front';
+import Bookmarksection from './bookmark/bookmark';
 
 const router = createBrowserRouter([
 {path : '/', element: <App /> },
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
 {path : '/characterinfo/:id', element: <Charinfo /> },
 {path : '/test', element: <Textt /> },
 {path : '/front', element: <FrontPage /> },
+{path : '/bookmark', element: <Bookmarksection /> },
  ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

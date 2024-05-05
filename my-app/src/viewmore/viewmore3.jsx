@@ -7,11 +7,18 @@ import bkmrk from "../img/bkmark.png"
 import Test from "../TestNav/Test";
 import Footer from "../Footer/Footer";
 
+
 function Viewmore3() {
   const { id } = useParams();
   const [showTrailer, setShowTrailer] = useState(false);
   const [animation, setAnimation] = useState(null);
 
+  function clickedbmark(){
+    var prevArray=JSON.parse(localStorage.getItem("array")) || [];
+    (prevArray.push(id))
+    localStorage.setItem("array", JSON.stringify(prevArray));
+  }
+  
   useEffect(() => {
     const getAnimation = async () => {
       try {
@@ -36,6 +43,7 @@ function Viewmore3() {
     <div className="main">
       <Test />
       <section className="container">
+      <Test/>
         <div className="cont-1">
           <img src={animation.images?.jpg?.large_image_url} alt="" className="darken"/>
           <div className="detailsSec">
@@ -56,13 +64,14 @@ function Viewmore3() {
                 <p>Duration: {animation.duration}</p>
                 <p>{animation.source}</p>
                 <p>{animation.category}</p>
+                <p>{animation.mal_id}</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="section2">
-          <p className="bookmark"> <img src={bkmrk} alt="" />Bookmark</p>
+          <p className="bookmark" onClick={clickedbmark}> <img src={bkmrk} alt=""/>Bookmark</p>
           <p onClick={() => setShowTrailer(!showTrailer)} className="trailer"><img src={playbtn} alt="" />Trailer</p>
         </div>
 
@@ -86,5 +95,4 @@ function Viewmore3() {
     </div>
   );
 }
-
 export default Viewmore3;
