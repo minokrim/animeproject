@@ -1,0 +1,23 @@
+.images{
+  width: 73.5%;
+  height: 20%;
+  margin-left: 13.3%;
+}
+.carousel-inner{
+  margin-top: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .images{
+      width:75%;
+      height:50%;
+    }
+  }
+ 
+.carousel-indicators button{
+  display: none;
+}
+a.carousel-control-next, a.carousel-control-prev{
+  display: none;
+}

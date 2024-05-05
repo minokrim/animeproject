@@ -1,0 +1,38 @@
+.footer-con{
+    flex: 1 1 auto;
+    height: 25px;
+    background-color:rgb(54, 52, 52);
+}
+.footer-big{
+    
+    background-color: #202020;;
+    width: 100%;
+    
+}
+.footer-info{
+    width: 100%;
+}
+.footer-a{
+    text-decoration: none;
+    color:#17a2b8;
+}
+.footer-a2{
+    text-decoration: none;
+    color:#17a2b8;
+    ;
+}
+.footer-p{
+    color:#6c6c6c;;
+}
+.footer-p2{
+    color:#6c6c6c;;
+}
+.footer-h{
+    color:whitesmoke ;
+}
+@media only screen and (max-width: 768px){
+
+    .footer-p{
+display: none;
+    }
+}
