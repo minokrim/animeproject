@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../bookmark/bookmark.css";
-import trash from "../img/trashh.png"
 import Test from "../TestNav/Test";
 import { CiTrash } from "react-icons/ci";
 function Bookmarksection() {
@@ -31,9 +30,9 @@ function Bookmarksection() {
 
   function deletebookmark(index){
     const newBookmarks = [...bookmarks];
-    newBookmarks.splice(index, 1); // Remove the bookmark at the specified index
-    setBookmarks(newBookmarks); // Update state
-    updateLocalStorage(newBookmarks); // Update local storage
+    newBookmarks.splice(index, 1); 
+    setBookmarks(newBookmarks); 
+    updateLocalStorage(newBookmarks); 
   }
 
   const updateLocalStorage = (newBookmarks) => {
