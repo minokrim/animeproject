@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/animeproject/static/css/main.932e1d0d.css",
-    "main.js": "/animeproject/static/js/main.a92800c0.js",
+    "main.js": "/animeproject/static/js/main.cb3d1042.js",
     "static/js/453.ed3810f9.chunk.js": "/animeproject/static/js/453.ed3810f9.chunk.js",
     "static/media/Code-Geass.jpg": "/animeproject/static/media/Code-Geass.63650cce61b337783142.jpg",
     "static/media/Solo-Leveling.jpg": "/animeproject/static/media/Solo-Leveling.9972eb3f15ceef5daf0c.jpg",
@@ -9,11 +9,11 @@
     "static/media/play-button.png": "/animeproject/static/media/play-button.1356601fff5921c0bf1c.png",
     "index.html": "/animeproject/index.html",
     "main.932e1d0d.css.map": "/animeproject/static/css/main.932e1d0d.css.map",
-    "main.a92800c0.js.map": "/animeproject/static/js/main.a92800c0.js.map",
+    "main.cb3d1042.js.map": "/animeproject/static/js/main.cb3d1042.js.map",
     "453.ed3810f9.chunk.js.map": "/animeproject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.932e1d0d.css",
-    "static/js/main.a92800c0.js"
+    "static/js/main.cb3d1042.js"
   ]
 }
