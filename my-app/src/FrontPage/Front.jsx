@@ -7,12 +7,14 @@ import berus from "../img/berus.png";
 import picolo from "../img/picolo.png";
 import Footer from "../Footer/Footer";
 
+
 import Test from "../TestNav/Test";
 import "./Front.css";
 export default function FrontPage() {
   return (
     <div className="homepage bg-black">
       <Test />
+      
       <div className="front-container">
       
           <div className="front-container1">
