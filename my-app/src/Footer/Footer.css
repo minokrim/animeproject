@@ -3,6 +3,12 @@
     height: 25px;
     background-color:rgb(54, 52, 52);
 }
+.custom-width{
+    width: 50%;
+}
+.custom-width2{
+    width: 50%;
+}
 .footer-big{
     
     background-color: #202020;;
@@ -34,5 +40,19 @@
 
     .footer-p{
 display: none;
+    }
+}
+@media only screen and (max-width: 350px){
+
+    .footer-h{
+        display: flex;
+        justify-content: start;
+
+    }
+    .custom-width{
+        width: 0%;
+    }
+    .custom-width2{
+        width: 100%;
     }
 }

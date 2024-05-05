@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import Test from './TestNav/Test';
 import './Sucess.css';
 import MyCarousel from './Carousel/Carousel';
+import { Link } from "react-router-dom";
 
 export default function Textt() {
   const location = useLocation();
@@ -22,11 +23,11 @@ export default function Textt() {
           {filteredData && filteredData.map((item) => (
             <div className="col p-0 m-2 border border-custom darken-on-hover" key={item.mal_id}>
               <div >
-             
+              <Link to= {`/viewmore/${item.mal_id}`}>
               <div className=" mt-0 ms-0  me-0 img-fluid d-flex justify-content-center align-content-center m-2  ">
               <img className="w-100 border rounded rounded-20 " src={item.images.jpg.large_image_url} alt=""/>
               </div>
-              
+              </Link>
               </div>
               <div className=" ">
                 <p className="text-center text-white ">{item.title}</p>

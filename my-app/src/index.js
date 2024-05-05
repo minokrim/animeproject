@@ -11,6 +11,7 @@ import FullPage from './Popular/Fullpopular';
 import Viewmore3 from './viewmore/viewmore3';
 import Charinfo from './viewmore/characterinfo';
 import Textt from './Sucess';
+import FrontPage from './FrontPage/Front';
 import Bookmarksection from './bookmark/bookmark';
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
 {path : '/viewmore/:id', element: <Viewmore3 /> },
 {path : '/characterinfo/:id', element: <Charinfo /> },
 {path : '/test', element: <Textt /> },
+{path : '/front', element: <FrontPage /> },
 {path : '/bookmark', element: <Bookmarksection /> },
  ]);
 

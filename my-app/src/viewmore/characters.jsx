@@ -1,6 +1,8 @@
 import React ,{useState,useEffect}from "react"
 import "../viewmore/character.css"
 import { Link } from "react-router-dom";
+import Test from "../TestNav/Test";
+import Footer from "../Footer/Footer";
 
 function Characters({number}){
     const [characters,setCharacters]=useState([])
@@ -15,6 +17,7 @@ useEffect(() => {
     },[]);
 console.log(number)
     return <div>
+       
         <section>
             {characters.map(char=>(
                 <div key={char.mal_id} className="darken"> 
@@ -26,6 +29,7 @@ console.log(number)
                 </div>
             ))}
         </section>
+       
     </div>
 }
 export default Characters

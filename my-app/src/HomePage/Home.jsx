@@ -16,7 +16,7 @@ function Home({ topAnime }) {
               <div >
               <Link to= {`/viewmore/${anime.mal_id}`}>
               <div className=" mt-0 ms-0  me-0 img-fluid d-flex justify-content-center align-content-center m-2  ">
-              <img className="w-100 border rounded rounded-20 " src={anime.images.jpg.large_image_url} alt=""/>
+              <img className="w-100 border " src={anime.images.jpg.large_image_url} alt=""/>
               </div>
               </Link>
               </div>

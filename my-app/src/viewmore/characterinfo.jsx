@@ -1,6 +1,8 @@
 import React ,{useState,useEffect}from "react";
 import "../viewmore/characterinfo.css"
 import { useParams } from "react-router-dom";
+import Test from "../TestNav/Test";
+import Footer from "../Footer/Footer";
 
 function Charinfo (){
     const { id } = useParams();
@@ -24,9 +26,10 @@ function Charinfo (){
         if (!information) {
             return null; 
           }
-    return <div className="main"> 
+    return <div className="main border"> 
+    <Test />
         <section className="info-container">
-            <div key={information.mal_id} className="info-body">
+            <div key={information.mal_id} className="info-body ">
             <img src={information.images?.jpg?.image_url} alt="" className="darken" />
             <div className="info-details">
             <p className=" text name">Name: {information.name}</p>
@@ -35,7 +38,7 @@ function Charinfo (){
             </div>
             </div>
         </section>
-
+<Footer />
     </div>
 }
 export default Charinfo

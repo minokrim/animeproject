@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import playbtn from "../img/play-button.png"
 import bkmrk from "../img/bkmark.png"
 import Test from "../TestNav/Test";
+import Footer from "../Footer/Footer";
+
 
 function Viewmore3() {
   const { id } = useParams();
@@ -39,6 +41,7 @@ function Viewmore3() {
 
   return (
     <div className="main">
+      <Test />
       <section className="container">
       <Test/>
         <div className="cont-1">
@@ -88,7 +91,7 @@ function Viewmore3() {
       <div className="characterSection">
       <Characters number={id}/>
       </div>
-      
+      <Footer />
     </div>
   );
 }

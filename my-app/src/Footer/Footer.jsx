@@ -8,9 +8,10 @@ export default function Footer(){
 return(
     <div className="footer-big mt-4">
         <div className="footer-con d-flex ">
-<div className="w-50">
+<div className="custom-width">
 <p className="footer-p ">Copyright &copy; MyAnime.All Rights Reserved.</p>
 </div>
+  
 <div className="d-flex w-50 justify-content-end me-3">
     <a className="footer-a me-3 "  ><FaAngleRight /> Contact</a>
    <a className="footer-a" ><FaAngleRight /> request</a>
