@@ -12,7 +12,7 @@ return(
 <p className="footer-p ">Copyright &copy; MyAnime.All Rights Reserved.</p>
 </div>
   
-<div className="d-flex w-50 justify-content-end me-3">
+<div className="costum-width2">
     <a className="footer-a me-3 "  ><FaAngleRight /> Contact</a>
    <a className="footer-a" ><FaAngleRight /> request</a>
 </div>

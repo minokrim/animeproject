@@ -64,11 +64,11 @@ return(
     <h1 className='header-1'>MyAnime</h1> 
     <div className={toggle? 'test2 active':'test2'}>
 
-      <Link to="/">
-      <a className='link d-flex align-items-center justify-content-center' href='/'><FaHome  className='text-white '/></a>
-      </Link>
+     
+      <a className='link d-flex align-items-center justify-content-center' href='/front'><FaHome  className='text-white '/></a>
+      
 
-        <a className='link d-flex align-items-center justify-content-center' href='/'><BiMoviePlay className='text-white'/></a>
+        <a className='link d-flex align-items-center justify-content-center' href='/front'><BiMoviePlay className='text-white'/></a>
         <a className='link d-flex align-items-center justify-content-center' href='/'><PiTelevisionSimpleFill className='text-white '/></a>    
         <Link to="/bookmark">
         <a className='link d-flex align-items-center justify-content-center' href='/'><FaBookmark className='text-white'/></a>    
