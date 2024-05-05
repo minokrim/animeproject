@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/animeproject/static/css/main.932e1d0d.css",
-    "main.js": "/animeproject/static/js/main.cb3d1042.js",
+    "main.css": "/animeproject/static/css/main.bd2dca2e.css",
+    "main.js": "/animeproject/static/js/main.baa83cf1.js",
     "static/js/453.ed3810f9.chunk.js": "/animeproject/static/js/453.ed3810f9.chunk.js",
+    "static/media/berus.png": "/animeproject/static/media/berus.de358d1a180ea9af7ff6.png",
+    "static/media/Vegeta.png": "/animeproject/static/media/Vegeta.cd228779d21ec95652f1.png",
+    "static/media/Goku.png": "/animeproject/static/media/Goku.d9b6888311e82d4c2b9d.png",
+    "static/media/picolo.png": "/animeproject/static/media/picolo.fd34017461549031e94a.png",
     "static/media/Code-Geass.jpg": "/animeproject/static/media/Code-Geass.63650cce61b337783142.jpg",
+    "static/media/Gohan.png": "/animeproject/static/media/Gohan.0bddb583039898ac3561.png",
+    "static/media/broly.png": "/animeproject/static/media/broly.bc2a90eef8d4ed00d0f7.png",
     "static/media/Solo-Leveling.jpg": "/animeproject/static/media/Solo-Leveling.9972eb3f15ceef5daf0c.jpg",
     "static/media/Black-Clover.jpg": "/animeproject/static/media/Black-Clover.4c1e23bfab04fa3897f7.jpg",
     "static/media/play-button.png": "/animeproject/static/media/play-button.1356601fff5921c0bf1c.png",
     "index.html": "/animeproject/index.html",
-    "main.932e1d0d.css.map": "/animeproject/static/css/main.932e1d0d.css.map",
-    "main.cb3d1042.js.map": "/animeproject/static/js/main.cb3d1042.js.map",
+    "main.bd2dca2e.css.map": "/animeproject/static/css/main.bd2dca2e.css.map",
+    "main.baa83cf1.js.map": "/animeproject/static/js/main.baa83cf1.js.map",
     "453.ed3810f9.chunk.js.map": "/animeproject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.932e1d0d.css",
-    "static/js/main.cb3d1042.js"
+    "static/css/main.bd2dca2e.css",
+    "static/js/main.baa83cf1.js"
   ]
 }
