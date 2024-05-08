@@ -20,7 +20,7 @@ console.log(number)
        
         <section>
             {characters.map(char=>(
-                <div key={char.mal_id} className="darken"> 
+                <div key={char.mal_id} className="characterdarken"> 
                 <Link to={`/characterinfo/${char.character.mal_id}`}>
                 <img src={char.character.images.jpg.image_url} alt="" className="charimage"/>
                 </Link>
