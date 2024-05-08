@@ -66,10 +66,13 @@ return(
 
 
       <a className='link d-flex align-items-center justify-content-center' href='/animeproject'><FaHome  className='text-white '/></a>
+      <Link to="/front">
+      <a className='link d-flex align-items-center justify-content-center' href='/front'><BiMoviePlay className='text-white'/></a>
+      </Link>
+      <Link to="/popular">
+      <a className='link d-flex align-items-center justify-content-center' href='/popular'><PiTelevisionSimpleFill className='text-white '/></a>    
 
-
-        <a className='link d-flex align-items-center justify-content-center' href='/front'><BiMoviePlay className='text-white'/></a>
-        <a className='link d-flex align-items-center justify-content-center' href='/popular'><PiTelevisionSimpleFill className='text-white '/></a>    
+      </Link>
         <a className='link d-flex align-items-center justify-content-center' href='/bookmark'><FaBookmark className='text-white'/></a>    
 
     </div>
