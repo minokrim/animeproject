@@ -52,7 +52,7 @@ function Viewmore3() {
       <section className="container">
       <Test/>
         <div className="cont-1">
-          <img src={animation.images?.jpg?.large_image_url} alt="" className="darken"/>
+          <img src={animation.images?.jpg?.large_image_url} alt="" className="viewmoredarken"/>
           <div className="detailsSec">
             <p className="title et">{animation.title}</p>
             <p className="title jt">{animation.title_japanese}</p>

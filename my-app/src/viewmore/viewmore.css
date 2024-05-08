@@ -137,7 +137,7 @@
     margin-top: -30px;
 }
 
-.darken{
+.viewmoredarken{
     border: solid white 0.1px;
     box-shadow: 5px 5px 17px 0px rgb(180, 148, 148);
 }
@@ -189,10 +189,11 @@
         .cont-1 img{
             display: flex;
             width: max-content;
-            height: 400px;
+            height: 300px;
             margin-left: 8px;
             text-align: center;
             align-self: center;
+            width: 250px;
         }
         .descriptionContainer{
             display: flex;
