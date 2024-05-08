@@ -30,7 +30,7 @@ function Charinfo (){
     <Test />
         <section className="info-container">
             <div key={information.mal_id} className="info-body ">
-            <img src={information.images?.jpg?.image_url} alt="" className="darken" />
+            <img src={information.images?.jpg?.image_url} alt="" className=" characterinfoimage darken" />
             <div className="info-details">
             <p className=" text name">Name: {information.name}</p>
             <p className="text name-foreign">{information.name_kanji}</p>
