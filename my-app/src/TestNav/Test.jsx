@@ -65,7 +65,6 @@ return(
     <div className={toggle? 'test2 active':'test2'}>
 
 
-
       <a className='link d-flex align-items-center justify-content-center' href='/animeproject'><FaHome  className='text-white '/></a>
 
 
