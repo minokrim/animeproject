@@ -3,6 +3,8 @@ import "../bookmark/bookmark.css";
 import Test from "../TestNav/Test";
 import { CiTrash } from "react-icons/ci";
 import Footer from "../Footer/Footer";
+import Swal from 'sweetalert2'
+
 function Bookmarksection() {
   const [bookmarks, setBookmarks] = useState([]);
 
@@ -34,6 +36,13 @@ function Bookmarksection() {
     newBookmarks.splice(index, 1); 
     setBookmarks(newBookmarks); 
     updateLocalStorage(newBookmarks); 
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Anime Removed from Bookmark",
+      showConfirmButton: false,
+      timer: 1500
+    });
   }
 
   const updateLocalStorage = (newBookmarks) => {
@@ -43,7 +52,7 @@ function Bookmarksection() {
 
   return (
     <div className="bookmarkMain">
-            <Test/>
+      <Test/>
       <section className="bookmarkSection">
       <h1 className="bmarktitle">Your Bookmarked Anime</h1>
         {bookmarks.map((bookmark,index) => (
