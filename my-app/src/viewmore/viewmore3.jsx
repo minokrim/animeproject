@@ -6,6 +6,7 @@ import playbtn from "../img/play-button.png"
 import bkmrk from "../img/bkmark.png"
 import Test from "../TestNav/Test";
 import Footer from "../Footer/Footer";
+import Swal from 'sweetalert2'
 
 
 function Viewmore3() {
@@ -17,6 +18,13 @@ function Viewmore3() {
     var prevArray=JSON.parse(localStorage.getItem("array")) || [];
     (prevArray.push(id))
     localStorage.setItem("array", JSON.stringify(prevArray));
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Succesfully Bookmarked Anime",
+      showConfirmButton: false,
+      timer: 1500
+    });
   }
   
   useEffect(() => {
@@ -41,7 +49,6 @@ function Viewmore3() {
 
   return (
     <div className="main">
-      <Test />
       <section className="container">
       <Test/>
         <div className="cont-1">

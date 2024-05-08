@@ -1,6 +1,6 @@
 .bookmarkMain{
     background-color: black;
-    height: 100vh;
+    height: 100%;
 }
 .bookmarkSection {
     background-color: black;
@@ -8,6 +8,8 @@
     flex-direction: column;
     align-items: flex-start;
     color: white;
+    height: max-content;
+    padding-bottom: 20px;
 }
 .bmark{
     display: flex;
@@ -44,8 +46,7 @@
     opacity: 100%;
 }
 .footersection{
-    display: flex;
-    margin-top: 340px;
+    margin-top: 254px;
 }
 
 @media screen and (max-width:1000px) {
@@ -101,8 +102,8 @@
     opacity: 100%;
 }
 .footersection{
+    position: relative;
     display: flex;
-    margin-top: 210px;
+    margin-top: -24px;
 }
-
 }

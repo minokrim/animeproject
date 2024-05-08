@@ -15,7 +15,7 @@ import FrontPage from './FrontPage/Front';
 import Bookmarksection from './bookmark/bookmark';
 
 const router = createBrowserRouter([
-{path : '/', element: <App /> },
+{path : '/animeProject', element: <App /> },
 {path : '/popular', element: <FullPage /> },
 {path : '/characters', element: <Characters /> },
 {path : '/viewmore/:id', element: <Viewmore3 /> },
