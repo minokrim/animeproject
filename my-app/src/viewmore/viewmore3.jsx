@@ -7,7 +7,7 @@ import bkmrk from "../img/bkmark.png"
 import Test from "../TestNav/Test";
 import Footer from "../Footer/Footer";
 import Swal from 'sweetalert2'
-
+import { IoClose } from "react-icons/io5";
 
 function Viewmore3() {
   const { id } = useParams();
@@ -47,6 +47,10 @@ function Viewmore3() {
     return null; 
   }
 
+  const CloseTrailer = () => {
+    setShowTrailer(false);
+  };
+
   return (
     <div className="main">
       <section className="container">
@@ -79,21 +83,23 @@ function Viewmore3() {
 
         <div className="section2">
           <p className="bookmark" onClick={clickedbmark}> <img src={bkmrk} alt=""/>Bookmark</p>
-          <p onClick={() => setShowTrailer(!showTrailer)} className="trailer"><img src={playbtn} alt="" />Trailer</p>
+          <p onClick={() => setShowTrailer(true)} className="trailer"><img src={playbtn} alt="" />Trailer</p>
         </div>
 
         <hr className="hr" />
-        <div key={animation.id} className="trailerVideo">
-          {showTrailer && (
+        {showTrailer && (
+          <div key={animation.id} className="trailerVideo">
+            <IoClose className="closebutton" onClick={CloseTrailer} />
             <iframe
-            title="Trailer"
+              title="Trailer"
               src={animation.trailer?.embed_url}
               width="1100px"
               allowFullScreen
               height="550px"
+              className="trailerframe"
             ></iframe>
-          )}
-        </div>
+          </div>
+        )}
       </section>
       <div className="characterSection">
       <Characters number={id}/>

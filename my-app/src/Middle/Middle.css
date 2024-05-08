@@ -28,8 +28,10 @@ body{
     transition: background-color 0.7s ease;
   direction: rtl;
   border-radius: 10px;
- 
- 
+  text-decoration: none;
+}
+.middlelink{
+  text-decoration: none;
 }
 
 .link-costum:hover {

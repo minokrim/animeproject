@@ -24,9 +24,9 @@ return(
     content are provided by non-affiliated third parties.
 </p>
 <div className="d-flex pb-3">
-<a className="footer-a2" href="/"> Anime </a>
-<a className="footer-a2 me-2 ms-2" href="/">MyAnime</a>
-<a className="footer-a2" href="/">ReadManga</a>
+<a className="footer-a2" href="/animeproject"> Anime </a>
+<a className="footer-a2 me-2 ms-2" href="/animeproject">MyAnime</a>
+<a className="footer-a2" href="/animeproject">ReadManga</a>
 </div>
         </div>
 
