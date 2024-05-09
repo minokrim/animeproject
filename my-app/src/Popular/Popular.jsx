@@ -28,7 +28,7 @@ console.log(popular);
       <div>
        
         <div className="container-fluid d-flex align-items-center">
-          <div className="row row-cols-1 row-cols-md-4 row-cols-lg-5 d-flex justify-content-center ">
+          <div className="row  row-cols-sm-2 row-cols-md-4 row-cols-lg-5 d-flex justify-content-center ">
           {popular.map((item) => (
             <div className="col p-0 m-2 border border-custom darken-on-hover" key={item.mal_id}>
              <Link to= {`/viewmore/${item.mal_id}`}>

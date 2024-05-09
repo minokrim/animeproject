@@ -32,7 +32,7 @@ export default function Test (){
       setData(data?.data);
     }
   
-    const debouncedSearch = useCallback(debounce(SearchAnime, 300,{ leading: true, trailing: true }), []);
+    const debouncedSearch = useCallback(debounce(SearchAnime, 340,{ leading: true, trailing: true, maxWait:1000, }), []);
   
 
     useEffect(() => {

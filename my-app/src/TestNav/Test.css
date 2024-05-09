@@ -159,7 +159,7 @@ left: 0;
 }
 .header-1{
     margin-left:10%;
-    margin-right: 5%;
+    margin-right: 4%;
 }
 
       }
@@ -176,7 +176,7 @@ left: 0;
             background-color: rgb(121, 30, 20,0.6);
             display: flex;
             flex-direction: column;
-            width: 30%;
+            width: 40%;
             height: 100vh;
             justify-content: center;
             margin-left: 0;
@@ -200,6 +200,45 @@ left: 0;
             margin-left:2%;
           margin-right: 0;
         }
+        
+              }
+
+
+
+
+    
+      @media only screen and (max-width: 445px) {
+     .burg{
+        margin: 0;
+     }
+     .header-1{
+        margin-left: 3%;
+        margin-right: 7%;
+     }
+        
+        
+        
+     
+        
+              }
+      @media only screen and (max-width: 320px) {
+        .whatever{
+            width: 180px;
+        }
+        .burg{
+            display: flex;
+            margin-right: 10%;
+        }
+        .header-1{
+            margin-left: 0;
+            margin-right: 7%;
+         }
+         .test1{
+            margin-right: 0;
+         }
+        
+        
+     
         
               }
 
