@@ -1,6 +1,8 @@
 import React from "react";
 import './Footer.css'
 import { FaAngleRight } from "react-icons/fa";
+import animeLogo from "../img/alogo4.png"
+
 export default function Footer(){
 
 
@@ -19,7 +21,8 @@ return(
         </div>
 
         <div className="footer-info d-flex flex-column justify-content-center align-items-center">
-<h1 className="footer-h">MyAnime</h1>
+{/* <h1 className="footer-h">MyAnime</h1> */}
+<img src={animeLogo} alt="" className="footerLogo"/>
 <p className="footer-p2">Disclaimer:This site does not store an files on its server.All
     content are provided by non-affiliated third parties.
 </p>
