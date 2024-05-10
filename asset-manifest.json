@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/animeproject/static/css/main.414d6abb.css",
-    "main.js": "/animeproject/static/js/main.0020005f.js",
+    "main.css": "/animeproject/static/css/main.e976ce9c.css",
+    "main.js": "/animeproject/static/js/main.bf44af12.js",
     "static/js/453.ed3810f9.chunk.js": "/animeproject/static/js/453.ed3810f9.chunk.js",
     "static/media/berus.png": "/animeproject/static/media/berus.de358d1a180ea9af7ff6.png",
     "static/media/Vegeta.png": "/animeproject/static/media/Vegeta.cd228779d21ec95652f1.png",
@@ -13,14 +13,15 @@
     "static/media/Solo-Leveling.jpg": "/animeproject/static/media/Solo-Leveling.9972eb3f15ceef5daf0c.jpg",
     "static/media/Black-Clover.jpg": "/animeproject/static/media/Black-Clover.4c1e23bfab04fa3897f7.jpg",
     "static/media/uni.jpg": "/animeproject/static/media/uni.175f6263a657c6d8c4fd.jpg",
+    "static/media/alogo4.png": "/animeproject/static/media/alogo4.6195034446a113884873.png",
     "static/media/play-button.png": "/animeproject/static/media/play-button.1356601fff5921c0bf1c.png",
     "index.html": "/animeproject/index.html",
-    "main.414d6abb.css.map": "/animeproject/static/css/main.414d6abb.css.map",
-    "main.0020005f.js.map": "/animeproject/static/js/main.0020005f.js.map",
+    "main.e976ce9c.css.map": "/animeproject/static/css/main.e976ce9c.css.map",
+    "main.bf44af12.js.map": "/animeproject/static/js/main.bf44af12.js.map",
     "453.ed3810f9.chunk.js.map": "/animeproject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.414d6abb.css",
-    "static/js/main.0020005f.js"
+    "static/css/main.e976ce9c.css",
+    "static/js/main.bf44af12.js"
   ]
 }
