@@ -65,9 +65,9 @@ return(
     <div className={toggle? 'test2 active':'test2'}>
 
 
-      <a className='link d-flex align-items-center justify-content-center' href='/animeproject'><FaHome  className='text-white '/></a>
-      <Link to="/front">
-      <a className='link d-flex align-items-center justify-content-center' href='/front'><BiMoviePlay className='text-white'/></a>
+      <a className='link d-flex align-items-center justify-content-center' href='/front'><FaHome  className='text-white '/></a>
+      <Link to="/animeProject">
+      <a className='link d-flex align-items-center justify-content-center' href=' /animeProject'><BiMoviePlay className='text-white'/></a>
       </Link>
       <Link to="/popular">
       <a className='link d-flex align-items-center justify-content-center' href='/popular'><PiTelevisionSimpleFill className='text-white '/></a>    

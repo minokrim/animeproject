@@ -59,7 +59,7 @@ svg.text-white{
     border-radius: 10px;
     border: 2px solid black;
   background-color: black;
-  margin-right: 0px;
+  
     text-decoration: none;
     height: 40px;
     width: 100px;
@@ -125,7 +125,7 @@ left: 0;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 475px) {
 .big-container{
     position: sticky;
     top: 0;
@@ -163,45 +163,22 @@ left: 0;
 }
 
       }
-      @media only screen and (max-width: 600px) {
-        .big-container{
-            position: sticky;
-            top: 0;
-            z-index: 9999;
-        }
-        .test2{
-            position: absolute;
-            top: 0;
-            left: -100%;
-            background-color: rgb(121, 30, 20,0.6);
-            display: flex;
-            flex-direction: column;
-            width: 40%;
-            height: 100vh;
-            justify-content: center;
-            margin-left: 0;
-            z-index: 1;
-            transition: 1s;
-        }
-        .burg{
-            display: flex;
-            margin-right: 8%;
-        }
-        .test2.active{
-            left: 0;
-        }
+      @media only screen and (max-width: 800px) {
+      .link{
+        width: 60px;
         
-        
-        
-        .link{
-            margin-bottom: 5%;
-        }
-        .header-1{
-            margin-left:2%;
-          margin-right: 0;
-        }
+      }
+      .test2{
+        margin-left: 2.5%;
+        margin-right: 10%;
+      }
+      .header-1{
+        margin-left: 0%;
+      }
+     
         
               }
+ 
 
 
 
