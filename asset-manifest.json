@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/animeproject/static/css/main.e976ce9c.css",
-    "main.js": "/animeproject/static/js/main.bf44af12.js",
+    "main.css": "/animeproject/static/css/main.e393c73a.css",
+    "main.js": "/animeproject/static/js/main.d3a39a1c.js",
     "static/js/453.ed3810f9.chunk.js": "/animeproject/static/js/453.ed3810f9.chunk.js",
     "static/media/berus.png": "/animeproject/static/media/berus.de358d1a180ea9af7ff6.png",
     "static/media/Vegeta.png": "/animeproject/static/media/Vegeta.cd228779d21ec95652f1.png",
@@ -16,12 +16,12 @@
     "static/media/alogo4.png": "/animeproject/static/media/alogo4.6195034446a113884873.png",
     "static/media/play-button.png": "/animeproject/static/media/play-button.1356601fff5921c0bf1c.png",
     "index.html": "/animeproject/index.html",
-    "main.e976ce9c.css.map": "/animeproject/static/css/main.e976ce9c.css.map",
-    "main.bf44af12.js.map": "/animeproject/static/js/main.bf44af12.js.map",
+    "main.e393c73a.css.map": "/animeproject/static/css/main.e393c73a.css.map",
+    "main.d3a39a1c.js.map": "/animeproject/static/js/main.d3a39a1c.js.map",
     "453.ed3810f9.chunk.js.map": "/animeproject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e976ce9c.css",
-    "static/js/main.bf44af12.js"
+    "static/css/main.e393c73a.css",
+    "static/js/main.d3a39a1c.js"
   ]
 }
