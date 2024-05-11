@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import debounce from 'lodash.debounce';
 import { useCallback } from 'react';
 import {Link} from "react-router-dom"
+import animeLogo from "../img/alogo4.png"
 
 
 export default function Test (){
@@ -61,7 +62,10 @@ return(
     
 <div className='big-container'>
     <div className='test1'>
-    <h1 className='header-1'>MyAnime</h1> 
+     <Link to="/animeproject">
+     <img src={animeLogo} alt=""  className='logo'/>
+     </Link>
+    {/* <h1 className='header-1'>MyAnime</h1>  */}
     <div className={toggle? 'test2 active':'test2'}>
 
 
@@ -71,9 +75,11 @@ return(
       </Link>
       <Link to="/popular">
       <a className='link d-flex align-items-center justify-content-center' href='/popular'><PiTelevisionSimpleFill className='text-white '/></a>    
+      </Link>
+      <Link to="/bookmark">
+      <a className='link d-flex align-items-center justify-content-center' href='/bookmark'><FaBookmark className='text-white'/></a>    
 
       </Link>
-        <a className='link d-flex align-items-center justify-content-center' href='/bookmark'><FaBookmark className='text-white'/></a>    
 
     </div>
 

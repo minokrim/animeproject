@@ -1,20 +1,21 @@
 .big-container{
     width: 100%;
-  
     background-color: black;
 }
 .test1{
-  
-    background-color:transparent ;
+    background-color: rgba(0, 0, 0,);
     display: flex;
     width: 100%;
     height: 60px;
     align-items: center;
-   
-
+}
+.logo{
+    display: flex;
+    width: auto;
+    height: 200px;
+    margin-top: 20px;
 }
 .test2{
-  
 background-color: black;
     display: flex;
     width: 35%;
@@ -36,7 +37,7 @@ background-color: black;
     
 }
 .link:hover{
-    background-color:rgb(73, 24, 24) ;
+    background-color: #bc0a0f;
 }
 
 svg.text-white{
@@ -45,14 +46,11 @@ svg.text-white{
 }
 
 
-.search-input{
-    
+.search-input{ 
   width: 200px;
     height: 40px;
-  
     border-radius: 10px;
     display: none;
-
     
 }
 .button-submit{
@@ -67,12 +65,10 @@ svg.text-white{
     transition: 0.7s ease-in-out;
     direction: ltr;
     margin-left: 5%;
-   
-   
 }
 
 .button-submit:hover{
-    background-color:rgb(73, 24, 24) ;
+    background-color:#bc0a0f ;
 }
 .input1{
    
@@ -85,10 +81,10 @@ svg.text-white{
 }
 .cost-input{
     position:relative ;
-  
     height: 40px;
     width: 50%;
     border-radius: 15px;
+    border: none;
 }
 .burg{
     display: none;
@@ -101,7 +97,6 @@ svg.text-white{
 
 .this{
     display: none;
-   
     position: absolute;
     background-color: white;
     top: 10%;
@@ -121,7 +116,11 @@ svg.text-white{
 .input1.active{
     position: relative;
     display: flex;
-left: 0;
+    left: 0;
+}
+
+input:focus {
+    outline: none;
 }
 
 @media only screen and (max-width: 800px) {
@@ -149,7 +148,7 @@ left: 0;
     position: absolute;
     top: 0;
     left: -100%;
-    background-color: rgb(121, 30, 20,0.6);
+    background-color: #bc0a0f;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -196,6 +195,15 @@ left: 0;
         .burg{
             display: flex;
             margin-right: 10%;
+        }
+        .test2.active{
+            left: 0;
+        }
+        
+        
+        
+        .link{
+            margin-bottom: 5%;
         }
         .header-1{
             margin-left: 0;
