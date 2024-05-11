@@ -86,7 +86,7 @@ return(
        
     
     <div className='whatever'>
-    <div className='d-flex align-items-center justify-content-center'>
+    <div className='d-flex align-items-center justify-content-center searchBurger'>
      <input className='search-input'  type="text" />
         <button className='button-submit'onClick={WhateverSearch}><FaSearch  className='text-white'/></button>
         <span className='burg' onClick={HandleNav}><RxHamburgerMenu className='w-100' /></span>
