@@ -219,6 +219,11 @@
             margin-left: 0;
             margin-top: 20px;
         }
+        .et{
+            display: flex;
+            width: 90%;
+            margin-left: 40px;
+        }
         .synopsis{
             width: 100%;
             display: flex;
