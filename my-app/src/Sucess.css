@@ -32,3 +32,16 @@
     filter: brightness(0.3); /* Adjust the value (between 0 and 1) to make the image darker */
   }
 
+  @media screen and (max-width:475px) {
+
+    .col:hover{
+    transform: none;
+   
+}
+.darken-on-hover{
+    transition: none;
+}
+.darken-on-hover:hover {
+    filter: none; /* Adjust the value (between 0 and 1) to make the image darker */
+  }
+}
