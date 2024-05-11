@@ -33,7 +33,7 @@ export default function Test (){
       setData(data?.data);
     }
   
-    const debouncedSearch = useCallback(debounce(SearchAnime, 300,{ leading: true, trailing: true }), []);
+    const debouncedSearch = useCallback(debounce(SearchAnime, 340,{ leading: true, trailing: true, maxWait:1000, }), []);
   
 
     useEffect(() => {
@@ -69,9 +69,9 @@ return(
     <div className={toggle? 'test2 active':'test2'}>
 
 
-      <a className='link d-flex align-items-center justify-content-center' href='/animeproject'><FaHome  className='text-white '/></a>
-      <Link to="/front">
-      <a className='link d-flex align-items-center justify-content-center' href='/front'><BiMoviePlay className='text-white'/></a>
+      <a className='link d-flex align-items-center justify-content-center' href='/front'><FaHome  className='text-white '/></a>
+      <Link to="/animeProject">
+      <a className='link d-flex align-items-center justify-content-center' href=' /animeProject'><BiMoviePlay className='text-white'/></a>
       </Link>
       <Link to="/popular">
       <a className='link d-flex align-items-center justify-content-center' href='/popular'><PiTelevisionSimpleFill className='text-white '/></a>    
