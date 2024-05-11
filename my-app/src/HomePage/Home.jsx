@@ -10,7 +10,7 @@ function Home({ topAnime }) {
       <div>
        
         <div className="container-fluid d-flex align-items-center">
-          <div className="row row-cols-1 row-cols-md-4 row-cols-lg-5 d-flex justify-content-center ">
+          <div className="row  row-cols-sm-2 row-cols-md-4 row-cols-lg-5 d-flex justify-content-center ">
           {topAnime.map((anime) => (
             <div className="col p-0 m-2 border border-custom darken-on-hover" key={anime.mal_id}>
               <div >

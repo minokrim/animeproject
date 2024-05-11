@@ -30,9 +30,7 @@ body{
   border-radius: 10px;
   text-decoration: none;
 }
-.middlelink{
-  text-decoration: none;
-}
+
 
 .link-costum:hover {
     background-color: rgb(96, 9, 9);
@@ -44,8 +42,19 @@ body{
     width: 100%;
     height: 40px;
   }
+  .link-costum:hover {
+ transition: none;
+  }
   .costum-div2{
-    margin-right: 13%;
-    margin-left: 60%;;
+   
+    margin-left: 50%;;
+  }
+  
+    }
+  @media only screen and (max-width: 320px) {
+ 
+  .costum-div2{
+
+    margin-left: 40%;;
   }
     }
