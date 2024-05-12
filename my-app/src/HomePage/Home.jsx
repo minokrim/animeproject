@@ -20,7 +20,7 @@ function Home({ topAnime }) {
               </div>
               </Link>
               </div>
-              <div className=" ">
+              <div className="homepagecard">
                 <p className="text-center text-white ">{anime.title}</p>
                 <p className="text-center text-white">{anime.type}{' '}{anime.aired.prop.from.year}</p>
               </div>

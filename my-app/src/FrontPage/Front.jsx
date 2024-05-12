@@ -24,10 +24,10 @@ export default function FrontPage() {
            
             </div>
             <p>
-              "Welcomes you to a world where dreams and reality blur, where every
+              Welcomes you to a world where dreams and reality blur, where every
               story is an adventure waiting to unfold. Step into the realm of
               anime, where imagination knows no bounds, and let your journey
-              begin."
+              begin.
             </p>
           </div>
           <div className="front-container2">
