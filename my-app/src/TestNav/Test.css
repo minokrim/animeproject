@@ -12,7 +12,7 @@
 .logo{
     display: flex;
     width: auto;
-    height: 200px;
+    height: 150px;
     margin-top: 20px;
 }
 .test2{
@@ -132,6 +132,42 @@ input:focus {
       margin-left: 0%;
     }
             }
+            @media screen and (max-width:475px) {
+                .test1{
+                    background-color: rgba(0, 0, 0,);
+                    display: flex;
+                    width: 100%;
+                    height: 60px;
+                    padding: 0;
+                    margin: 0;
+                    
+                }
+                .logo{
+                    display: flex;
+                    width: auto;
+                    height: 150px;
+                    margin-top: 10px;
+                }
+                .button-submit{
+                    width: 70px;
+                    margin-left: 0;
+                }
+                .burg{
+                    display: flex;
+                }
+                .searchBurger{
+                    display: flex;
+                    justify-content: left;
+                    gap: 80px;
+                    width: 170px;
+            
+                }
+                .button-submit:hover{
+                    background-color: black;
+                  }
+            
+            
+            }
 
 @media only screen and (max-width: 475px) {
 .big-container{
@@ -139,6 +175,9 @@ input:focus {
     top: 0;
     z-index: 9999;
 }
+.button-submit:hover{
+    background-color: black;
+  }
 .test2{
     position: absolute;
     top: 0;
@@ -181,6 +220,9 @@ input:focus {
         margin-left: 3%;
         margin-right: 7%;
      }
+     .button-submit:hover{
+        background-color: black;
+      }
         
               }
       @media only screen and (max-width: 320px) {
@@ -207,44 +249,16 @@ input:focus {
          .test1{
             margin-right: 0;
          }
+         .button-submit:hover{
+            background-color: black;
+          }
         
         
      
         
               }
 
-@media screen and (max-width:600px) {
-    .test1{
-        background-color: rgba(0, 0, 0,);
-        display: flex;
-        width: 100%;
-        height: 60px;
-        padding: 0;
-        margin: 0;
-    }
-    .logo{
-        display: flex;
-        width: auto;
-        height: 150px;
-        margin-top: 10px;
-    }
-    .button-submit{
-        width: 10px;
-        margin-left: 0;
-    }
-    .burg{
-        display: flex;
-    }
-    .searchBurger{
-        display: flex;
-        justify-content: left;
-        gap: 80px;
-        width: 170px;
 
-    }
-
-
-}
 @media screen and (max-width:450px) {
     .searchBurger{
         display: flex;
@@ -252,6 +266,9 @@ input:focus {
         gap: 120px;
         width: 270px;
     }
+    .button-submit:hover{
+        background-color: black;
+      }
 }
 
 @media screen and (max-width:419px) {
@@ -272,6 +289,9 @@ input:focus {
     .button-submit{
         width: 10px;
         margin-left: 0;
+    }
+    .button-submit:hover{
+      background-color: black;
     }
     .burg{
         display: flex;

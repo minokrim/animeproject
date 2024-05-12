@@ -19,7 +19,7 @@ export default function Textt() {
     <Test />
        <MyCarousel />
         <div className="container-fluid d-flex align-items-center">
-          <div className="row row-cols-3  row-cols-md-4 row-cols-lg-5 d-flex justify-content-center ">
+          <div className="row row-cols-1  row-cols-md-4 row-cols-lg-5 d-flex justify-content-center ">
           {filteredData && filteredData.map((item) => (
             <div className="col p-0 m-2 border border-custom darken-on-hover" key={item.mal_id}>
               <div >
