@@ -15,13 +15,13 @@ import FrontPage from './FrontPage/Front';
 import Bookmarksection from './bookmark/bookmark';
 
 const router = createBrowserRouter([
-{path : '/animeProject', element: <App /> },
+{path : '/main', element: <App /> },
 {path : '/popular', element: <FullPage /> },
 {path : '/characters', element: <Characters /> },
 {path : '/viewmore/:id', element: <Viewmore3 /> },
 {path : '/characterinfo/:id', element: <Charinfo /> },
 {path : '/test', element: <Textt /> },
-{path : '/front', element: <FrontPage /> },
+{path : '/animeProject', element: <FrontPage /> },
 {path : '/bookmark', element: <Bookmarksection /> },
  ]);
 

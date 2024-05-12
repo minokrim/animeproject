@@ -1,3 +1,35 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../img/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto Extra Bold";
+    src: url("../img/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto Light Italic";
+    src: url("../img/Roboto/Roboto-LightItalic.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto Black Italic";
+    src: url("../img/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("../img/Roboto/Roboto-ThinItalic.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("../img/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+    font-weight: normal;
+}
+
+
 .front-container{
   display: flex;
     width: 100%;
@@ -34,11 +66,15 @@ background-image: url('../img/uni.jpg');
 }
 .bor{
     border-bottom: solid white 2px;
+    font-family: Roboto Extra Bold;
 }
+
 .front-container1 p{
     margin-bottom: 20%;
     color: white;
     font-size: small;
+    font-family: Roboto Black Italic;
+    font-size: 15px;
 }
 .front-container2{
     display: flex;

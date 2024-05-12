@@ -264,7 +264,7 @@ input:focus {
         display: flex;
         justify-content: left;
         gap: 120px;
-        width: 270px;
+        width: 250px;
     }
     .button-submit:hover{
         background-color: black;
@@ -298,10 +298,9 @@ input:focus {
     }
     .searchBurger{
         display: flex;
-        justify-content: left;
-        gap: 80px;
-        width: 170px;
-
+        gap: 70px;
+        width: 153px;
+        border: solid 1px red;
     }
 
 
