@@ -88,8 +88,11 @@ section{
     } */
     .name{
         font-size: 900px;
-        width: 50%;
+        width: 100%;
         font-weight: 200;
+        border: solid 1px red;
+        display: flex;
+        overflow: hidden;
     }
 }
 
