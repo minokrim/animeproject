@@ -300,7 +300,6 @@ input:focus {
         display: flex;
         gap: 70px;
         width: 153px;
-        border: solid 1px red;
     }
 
 
