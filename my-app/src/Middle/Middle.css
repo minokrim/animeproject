@@ -8,9 +8,9 @@ body{
 .costum-div2{
    background-color: gray;
     width: 155px;
-   
     border-radius: 10px;
     margin-left: 75%;
+    gap: 30px;
 }
 .costum-div{
     width: 75%;
@@ -37,6 +37,12 @@ body{
     color: #ffffff;
   }
 
+  Link{
+    text-decoration: none;
+  }
+.l1{
+  text-decoration: none;
+}
   @media only screen and (max-width: 600px) {
   .costum-div{
     width: 100%;
